@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Northstar Workspace",
+  "version": "0.1.0",
+  "identifier": "com.northstar.workspace",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Northstar Workspace",
+        "width": 1440,
+        "height": 920,
+        "minWidth": 980,
+        "minHeight": 640,
+        "backgroundColor": "#f5f5f0"
+      }
+    ],
+    "security": { "csp": null }
+  },
+  "bundle": { "active": true, "targets": ["nsis", "msi"] }
+}
